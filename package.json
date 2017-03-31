@@ -11,7 +11,7 @@
     "url": "github.com/chentsulin/is-npm-linked"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4.0"
   },
   "files": [
     "src/"
@@ -32,7 +32,7 @@
     "testonly": "NODE_ENV=test jest",
     "test": "npm run lint && npm run testonly",
     "testonly:watch": "npm run testonly -- --watch",
-    "testonly:cov": "npm run testonly -- --converage",
+    "testonly:cov": "npm run testonly -- --coverage",
     "lint": "eslint src",
     "lint:fix": "npm run lint -- --fix",
     "preversion": "npm test"
