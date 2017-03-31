@@ -1,6 +1,6 @@
 {
   "name": "is-npm-linked",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Check your npm package is linked",
   "main": "src/index.js",
   "license": "MIT",
