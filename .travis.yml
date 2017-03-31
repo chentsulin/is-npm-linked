@@ -1,0 +1,12 @@
+sudo: false
+language: node_js
+node_js:
+  - "7"
+  - "6"
+  - "4"
+
+cache:
+  directories:
+    - node_modules
+script: "npm run lint && npm run testonly:cov"
+after_script: "npm install coveralls@2 && nyc report --reporter=text-lcov | coveralls"

@@ -1,0 +1,10 @@
+{
+  "extends": "yoctol-base",
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "rules": {
+    "func-names": "off"
+  }
+}

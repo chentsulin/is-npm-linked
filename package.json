@@ -1,0 +1,44 @@
+{
+  "name": "is-npm-linked",
+  "version": "0.1.0",
+  "description": "Check your npm package is linked",
+  "main": "src/index.js",
+  "license": "MIT",
+  "repository": "chentsulin/is-npm-linked",
+  "author": {
+    "name": "C.T. Lin",
+    "email": "chentsulin@gmail.com",
+    "url": "github.com/chentsulin/is-npm-linked"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "src/"
+  ],
+  "keywords": [
+    "npm",
+    "link",
+    "npm-link"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-yoctol-base": "^0.12.2",
+    "eslint-plugin-import": "^2.2.0",
+    "jest": "^19.0.2"
+  },
+  "scripts": {
+    "testonly": "NODE_ENV=test jest",
+    "test": "npm run lint && npm run testonly",
+    "testonly:watch": "npm run testonly -- --watch",
+    "testonly:cov": "npm run testonly -- --converage",
+    "lint": "eslint src",
+    "lint:fix": "npm run lint -- --fix",
+    "preversion": "npm test"
+  },
+  "devEngines": {
+    "node": ">=4.x",
+    "npm": ">=2.x"
+  }
+}
